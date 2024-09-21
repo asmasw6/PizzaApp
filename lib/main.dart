@@ -1,9 +1,11 @@
+import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:flutter_application_1/app.dart';
 import 'package:flutter_application_1/simple_bloc_observer.dart';
 import 'package:bloc/bloc.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:user_repository/user_repository.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,11 +16,9 @@ void main() async {
     projectId: 'firstproject-19070',
     storageBucket: 'firstproject-19070.appspot.com',
   ));
+
+  FirebaseAppCheck.instance.setTokenAutoRefreshEnabled(false);
+
   Bloc.observer = SimpleBlocObserver();
   runApp( MyApp(FirebaseUserRepo()));
 }
-/*
-
-
- */
-

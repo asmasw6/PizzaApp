@@ -7,15 +7,16 @@ environment:
   sdk: '>=3.4.0-209.0.dev <4.0.0'
 
 dependencies:
+  
   flutter:
     sdk: flutter
 
   equatable: ^2.0.5
-  firebase_auth: ^4.16.0
-  cloud_firestore: ^4.9.2
-  firebase_storage: ^11.6.0
-  rxdart: ^ 0.27.7
-  path: ^1.8.3
+  firebase_auth: ^5.2.0
+  cloud_firestore: ^5.4.0
+  firebase_storage: ^12.2.0
+  rxdart: ^0.28.0
+  path: ^1.9.0
 
   cupertino_icons: ^1.0.6
 

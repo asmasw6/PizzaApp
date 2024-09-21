@@ -22,13 +22,13 @@ List<Object> get props => [email, password];
 }
 
 class SignOutRequired extends SignInEvent{
-  final String email;
-  final String password;
+ // final String email;
+  //final String password;
 
-  const SignOutRequired(this.email , this.password);
+ // const SignOutRequired(this.email , this.password);
 
 
-@override
-List<Object> get props => [email, password]; 
+//@override
+//List<Object> get props => [email, password]; 
 
 }

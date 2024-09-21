@@ -17,7 +17,7 @@ class MyUserEntity {
       'userId': userId,
       "email": email,
       "name": name,
-      "hasActivrCart": hasActiveCart
+      "hasActiveCart": hasActiveCart
     };
   }
 

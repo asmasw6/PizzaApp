@@ -29,6 +29,7 @@ android {
     namespace = "com.example.flutter_application_1"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
+    compileSdk 34
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -47,6 +48,8 @@ android {
         versionName = flutterVersionName
         minSdkVersion 23
         multiDexEnabled true
+        //minSdkVersion 21
+        targetSdkVersion 34
 
         
     }
