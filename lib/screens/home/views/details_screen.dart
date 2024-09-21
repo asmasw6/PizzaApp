@@ -15,8 +15,8 @@ class DetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
       final screenWidth= MediaQuery.of(context).size.width;
       final screenHeight = MediaQuery.of(context).size.height;
-      log(">>>>>> screenHeight "+screenHeight.toString());
-      log(">>>>>> screenWidth "+screenWidth.toString());
+      //log(">>>>>> screenHeight "+screenHeight.toString());
+      //log(">>>>>> screenWidth "+screenWidth.toString());
 
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,

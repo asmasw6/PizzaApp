@@ -44,7 +44,8 @@ class MyMacroWidget extends StatelessWidget {
                 Title =="Claories"? 
                 "${value} ${Title}": "${value}g ${Title}",
                 style: TextStyle(
-                  fontSize: 10,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w900,
                 ),
               )
             ],

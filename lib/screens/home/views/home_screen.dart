@@ -41,7 +41,7 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 context.read<SignInBloc>().add(SignOutRequired());
               },
-              icon: Icon(CupertinoIcons.arrow_right_to_line)),
+              icon: const Icon(CupertinoIcons.arrow_right_to_line)),
         ],
       ),
       body: builGridViewList(),
@@ -55,7 +55,7 @@ class HomeScreen extends StatelessWidget {
         builder: (context, state) {
           if (state is GetPizzaSuccess) {
             return GridView.builder(
-              gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 crossAxisSpacing: 16,
                 mainAxisSpacing: 16,
@@ -99,7 +99,7 @@ class HomeScreen extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(30.0),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsets.symmetric(
+                                  padding: const EdgeInsets.symmetric(
                                     vertical: 4,
                                     horizontal: 8,
                                   ),
@@ -107,7 +107,7 @@ class HomeScreen extends StatelessWidget {
                                     state.pizzas[index].isVeg
                                         ? "VEG"
                                         : "NON-VEG",
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 10,
@@ -124,7 +124,7 @@ class HomeScreen extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(30.0),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsets.symmetric(
+                                  padding: const EdgeInsets.symmetric(
                                     vertical: 4,
                                     horizontal: 8,
                                   ),
@@ -154,19 +154,19 @@ class HomeScreen extends StatelessWidget {
                           height: 12,
                         ),
                         Padding(
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 10.0,
                           ),
                           child: Text(
                             state.pizzas[index].name,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
                             ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                               horizontal: 12.0, vertical: 6.0),
                           child: Text(
                             state.pizzas[index].description,
@@ -178,7 +178,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               horizontal: 12.0,
                             ),
                             child: Row(
@@ -197,7 +197,7 @@ class HomeScreen extends StatelessWidget {
                                         fontWeight: FontWeight.w700,
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 6,
                                     ),
                                     Text(
@@ -210,7 +210,7 @@ class HomeScreen extends StatelessWidget {
                                           decoration:
                                               TextDecoration.lineThrough),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
                                   ],
@@ -219,7 +219,7 @@ class HomeScreen extends StatelessWidget {
                                   onTap: () {
                                     // Add your onPressed action here
                                   },
-                                  child: Icon(
+                                  child: const Icon(
                                     CupertinoIcons.add_circled_solid,
                                     size: 16, // Adjust the size as needed
                                   ),
@@ -239,7 +239,7 @@ class HomeScreen extends StatelessWidget {
               ),
             );
           } else {
-            return Center(
+            return const Center(
               child: Text("An Error has ocuured ❌"),
             );
           }
